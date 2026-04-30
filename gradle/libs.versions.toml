@@ -1,0 +1,15 @@
+[versions]
+jackson = "3.1.0"
+junit = "6.0.3"
+
+[libraries]
+jackson-afterburner = { module = "tools.jackson.module:jackson-module-afterburner", version.ref = "jackson" }
+jackson-databind = { module = "tools.jackson.core:jackson-databind", version.ref = "jackson" }
+
+junit-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+junit-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
+
+mockito = "org.mockito:mockito-junit-jupiter:5.23.0"
+assertj = "org.assertj:assertj-core:3.27.7"
+
+hsqldb = "org.hsqldb:hsqldb:2.7.4"

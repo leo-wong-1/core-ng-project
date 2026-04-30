@@ -3,11 +3,10 @@
 /build/
 buildSrc/.gradle/
 buildSrc/build/
-buildSrc/out/
 *.iml
 /classes/
 **/src/dev/java/
 .DS_Store
 node_modules/
 wiki/
-
+out/

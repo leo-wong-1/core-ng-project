@@ -1,0 +1,27 @@
+plugins {
+    project
+    lint
+    lib
+}
+
+dependencies {
+    api(project(":core-ng-api"))
+    api("org.slf4j:slf4j-api:2.0.17")
+    implementation("org.javassist:javassist:3.30.2-GA")
+    implementation(libs.jackson.afterburner)
+    implementation(libs.jackson.databind)
+    implementation("com.squareup.okhttp3:okhttp:5.3.2")
+    implementation("io.undertow:undertow-core:2.3.24.Final")
+    implementation("org.apache.kafka:kafka-clients:4.2.0") {
+        exclude("org.xerial.snappy")
+        exclude("at.yawk.lz4")
+    }
+    compileOnly("org.jboss.logging:jboss-logging-annotations:2.2.1.Final")
+    compileOnly("com.github.spotbugs:spotbugs-annotations:4.9.8")
+    testImplementation(libs.junit.api)
+    testImplementation(libs.mockito)
+    testImplementation(libs.assertj)
+    testRuntimeOnly(libs.junit.engine)
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    testRuntimeOnly("org.hsqldb:hsqldb:2.7.4")
+}
