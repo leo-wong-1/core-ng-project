@@ -15,6 +15,10 @@ subprojects {
     }
 }
 
+tasks.named<Wrapper>("wrapper") {
+    gradleVersion = "latest"
+}
+
 val mavenURL = project.properties["mavenURL"]    // usage: "gradlew -PmavenURL=/path clean publish"
 
 subprojects {
