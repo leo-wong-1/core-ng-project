@@ -4,18 +4,16 @@ plugins {
     lib
 }
 
-val elasticVersion = "9.3.2"
-
 dependencies {
     implementation(project(":core-ng-test"))
     implementation(project(":core-ng-search"))
-    implementation("org.elasticsearch:elasticsearch:${elasticVersion}") {
+    implementation(libs.elasticsearch) {
         exclude(group = "io.opentelemetry")
     }
-    implementation("org.elasticsearch.plugin:transport-netty4:${elasticVersion}")
-    implementation("core.framework.elasticsearch.module:mapper-extras:${elasticVersion}")       // used by elasticsearch scaled_float
-    implementation("core.framework.elasticsearch.module:lang-painless:${elasticVersion}")
-    implementation("core.framework.elasticsearch.module:analysis-common:${elasticVersion}")     // used by elasticsearch stemmer
-    implementation("core.framework.elasticsearch.module:reindex:${elasticVersion}")             // used by elasticsearch deleteByQuery
-    runtimeOnly("org.apache.logging.log4j:log4j-to-slf4j:2.19.0")
+    implementation(libs.elasticsearch.plugin.transport.netty4)
+    implementation(libs.elasticsearch.plugin.mapper.extras)       // used by elasticsearch scaled_float
+    implementation(libs.elasticsearch.plugin.lang.painless)
+    implementation(libs.elasticsearch.plugin.analysis.common)     // used by elasticsearch stemmer
+    implementation(libs.elasticsearch.plugin.reindex)             // used by elasticsearch deleteByQuery
+    runtimeOnly("org.apache.logging.log4j:log4j-to-slf4j:2.19.0") // elasticsearch uses log4j-api:2.19.0
 }

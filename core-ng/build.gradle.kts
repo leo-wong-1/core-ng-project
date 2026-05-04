@@ -7,7 +7,7 @@ plugins {
 dependencies {
     api(project(":core-ng-api"))
     api("org.slf4j:slf4j-api:2.0.17")
-    implementation("org.javassist:javassist:3.30.2-GA")
+    implementation("org.javassist:javassist:3.31.0-GA")
     implementation(libs.jackson.afterburner)
     implementation(libs.jackson.databind)
     implementation("com.squareup.okhttp3:okhttp:5.3.2")
@@ -23,5 +23,5 @@ dependencies {
     testImplementation(libs.assertj)
     testRuntimeOnly(libs.junit.engine)
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-    testRuntimeOnly("org.hsqldb:hsqldb:2.7.4")
+    testRuntimeOnly(libs.hsqldb)
 }

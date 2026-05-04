@@ -1,6 +1,7 @@
 [versions]
-jackson = "3.1.2"
+jackson = "3.1.3"
 junit = "6.0.3"
+elastic = "9.3.2"
 
 [libraries]
 jackson-afterburner = { module = "tools.jackson.module:jackson-module-afterburner", version.ref = "jackson" }
@@ -13,3 +14,12 @@ mockito = "org.mockito:mockito-junit-jupiter:5.23.0"
 assertj = "org.assertj:assertj-core:3.27.7"
 
 hsqldb = "org.hsqldb:hsqldb:2.7.4"
+elasticsearch-java = { module = "co.elastic.clients:elasticsearch-java", version.ref = "elastic" }
+elasticsearch-rest5-client = { module = "co.elastic.clients:elasticsearch-rest5-client", version.ref = "elastic" }
+
+elasticsearch = { module = "org.elasticsearch:elasticsearch", version.ref = "elastic" }
+elasticsearch-plugin-transport-netty4 = { module = "org.elasticsearch.plugin:transport-netty4", version.ref = "elastic" }
+elasticsearch-plugin-mapper-extras = { module = "core.framework.elasticsearch.module:mapper-extras", version.ref = "elastic" }
+elasticsearch-plugin-lang-painless = { module = "core.framework.elasticsearch.module:lang-painless", version.ref = "elastic" }
+elasticsearch-plugin-analysis-common = { module = "core.framework.elasticsearch.module:analysis-common", version.ref = "elastic" }
+elasticsearch-plugin-reindex = { module = "core.framework.elasticsearch.module:reindex", version.ref = "elastic" }

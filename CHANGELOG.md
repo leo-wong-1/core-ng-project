@@ -2,6 +2,9 @@
 
 ### 9.5.2 (4/29/26 - )
 
+* json: updated jackson to 3.1.3
+  > fixed: https://github.com/FasterXML/jackson-modules-base/issues/343
+
 ### 9.5.1 (2/25/26 - 4/20/26)
 
 * kafka: update to 4.2.0
