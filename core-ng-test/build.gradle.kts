@@ -6,6 +6,7 @@ plugins {
 
 dependencies {
     api(libs.junit.api)
+    api(libs.junit.params)
     api(libs.mockito)
     api(libs.assertj)
     implementation(project(":core-ng"))

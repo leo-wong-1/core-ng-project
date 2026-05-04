@@ -7,6 +7,7 @@ plugins {
 dependencies {
     api(project(":core-ng-api"))
     api("org.slf4j:slf4j-api:2.0.17")
+    api("org.jspecify:jspecify:1.0.0")
     implementation("org.javassist:javassist:3.31.0-GA")
     implementation(libs.jackson.afterburner)
     implementation(libs.jackson.databind)

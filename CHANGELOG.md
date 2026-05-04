@@ -4,6 +4,8 @@
 
 * json: updated jackson to 3.1.3
   > fixed: https://github.com/FasterXML/jackson-modules-base/issues/343
+* lib: export jspecify from core-ng
+* lib: export junit-params from core-ng-test
 
 ### 9.5.1 (2/25/26 - 4/20/26)
 
