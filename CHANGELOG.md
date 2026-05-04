@@ -6,6 +6,7 @@
   > fixed: https://github.com/FasterXML/jackson-modules-base/issues/343
 * lib: export jspecify from core-ng
 * lib: export junit-params from core-ng-test
+* jre: published neowu/jre:26
 
 ### 9.5.1 (2/25/26 - 4/20/26)
 
