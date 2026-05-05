@@ -1,6 +1,6 @@
 ## Change log
 
-### 9.5.2 (4/29/26 - )
+### 9.5.2 (4/29/26 - 5/4/26)
 
 * json: updated jackson to 3.1.3
   > fixed: https://github.com/FasterXML/jackson-modules-base/issues/343
