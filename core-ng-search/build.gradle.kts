@@ -2,6 +2,7 @@ plugins {
     project
     lint
     lib
+    maven
 }
 
 dependencies {
